@@ -1,0 +1,27 @@
+{
+  "name": "gcd-js",
+  "version": "0.0.1",
+  "description": "Greatest common divisor.",
+  "main": "index.js",
+  "scripts": {
+    "jshint": "jshint lib",
+    "test": "mocha --reporter spec",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frederick-S/gcd-js"
+  },
+  "author": "Frederick-S",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Frederick-S/gcd-js/issues"
+  },
+  "devDependencies": {
+    "mocha": "1.21.5",
+    "coveralls": "2.11.2",
+    "istanbul": "0.3.2",
+    "mocha-lcov-reporter": "0.0.1",
+    "jshint": "2.5.8"
+  }
+}
